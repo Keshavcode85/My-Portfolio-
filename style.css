@@ -744,23 +744,35 @@ footer {
     }
 }
 
-/* ================= MOBILE ONLY FIX ================= */
+/* ================= MOBILE ONLY (FINAL FIX) ================= */
 @media (max-width: 768px) {
 
-    /* Header thoda stable rahe */
+    /* HEADER: mobile me fixed nahi hoga */
     header {
+        position: static;
         padding: 0.7rem 5%;
     }
 
-    /* Har page ka top gap fix (fixed header issue) */
+    /* NAV alignment thoda clean */
+    nav {
+        margin-top: 0.5rem;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 0.3rem 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    /* PAGE TOP SPACE (fixed header hat gaya) */
     .page {
-        padding-top: 130px;
+        padding-top: 40px;
     }
 
     /* HOME PAGE */
     #home {
         min-height: auto;
-        padding-top: 130px;
+        padding-top: 40px;
     }
 
     .hero-content h2 {
@@ -769,6 +781,7 @@ footer {
 
     .typing-container {
         height: auto;
+        font-size: 1.3rem;
     }
 
     .skill-rotate {
@@ -776,13 +789,14 @@ footer {
         text-align: center;
     }
 
-    /* Intro text readable ho */
+    /* Intro section */
     .intro-text {
         padding: 1.2rem;
+        margin-top: 1.5rem;
         text-align: left;
     }
 
-    /* Social icons tight na ho */
+    /* Social icons */
     .social-links {
         gap: 1rem;
     }
@@ -790,16 +804,17 @@ footer {
     .social-links a {
         width: 50px;
         height: 50px;
+        font-size: 1.2rem;
     }
 
-    /* ABOUT / OTHER PAGES */
+    /* ABOUT / PROJECT / CONTACT spacing */
     .about-content,
+    .project,
     .contact-form,
     .resume-preview,
-    .project,
     .skill-card,
     .tool-item {
         margin-top: 0.8rem;
     }
-
 }
+
