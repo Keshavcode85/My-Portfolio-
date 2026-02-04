@@ -857,3 +857,25 @@ footer {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+/* ===== DESKTOP PROJECT PAGE FOOTER FIX ===== */
+@media (min-width: 1025px) {
+
+    /* Projects page ko normal document flow me lao */
+    #projects {
+        min-height: auto;
+        padding-bottom: 80px;   /* footer ke liye space */
+    }
+
+    /* Page container flex issue fix */
+    .page {
+        justify-content: flex-start;
+    }
+
+    /* Footer ko natural position me rakho */
+    footer {
+        position: relative;
+        margin-top: 60px;
+    }
+}
+
