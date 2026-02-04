@@ -745,36 +745,35 @@ footer {
     }
 }
 
-/* ================= MOBILE ONLY (FINAL FIX) ================= */
+/* ===== MOBILE HEADER FIX ===== */
 @media (max-width: 768px) {
 
-    /* HEADER: mobile me fixed nahi hoga */
     header {
-        position: static;
-        padding: 0.7rem 5%;
+        position: static;          /* mobile me fixed nahi */
+        padding: 0.8rem 5%;
+        height: auto;
     }
 
-    /* NAV alignment thoda clean */
     nav {
-        margin-top: 0.5rem;
-        text-align: center;
+        display: flex;
+        flex-wrap: wrap;           /* ⭐ wrap allow */
+        justify-content: center;   /* center align */
+        gap: 0.8rem;               /* links ke beech gap */
+        margin-top: 0.6rem;
     }
 
     nav a {
-        margin: 0.3rem 0.5rem;
         font-size: 0.9rem;
+        padding: 0.3rem 0.6rem;
+        white-space: nowrap;       /* text break na ho */
     }
 
-    /* PAGE TOP SPACE (fixed header hat gaya) */
-    .page {
-        padding-top: 40px;
-    }
-
-    /* HOME PAGE */
+    /* Home section upar chipak na jaaye */
     #home {
-        min-height: auto;
-        padding-top: 40px;
+        padding-top: 30px;
     }
+}
+
 
     .hero-content h2 {
         font-size: 2.2rem;
@@ -817,7 +816,6 @@ footer {
     .tool-item {
         margin-top: 0.8rem;
     }
-}
 
 /* ================= TABLET ONLY FIX ================= */
 @media (min-width: 769px) and (max-width: 1024px) {
