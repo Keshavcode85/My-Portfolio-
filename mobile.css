@@ -1,0 +1,71 @@
+/* ===== MOBILE HEADER FIX ===== */
+@media (max-width: 768px) {
+
+    header {
+        position: static;          
+        padding: 0.8rem 5%;
+        height: auto;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;           
+        justify-content: center;   
+        gap: 0.8rem;               
+        margin-top: 0.6rem;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+        padding: 0.3rem 0.6rem;
+        white-space: nowrap;      
+    }
+
+    /* Home section upar chipak na jaaye */
+    #home {
+        padding-top: 30px;
+    }
+}
+
+
+    .hero-content h2 {
+        font-size: 2.2rem;
+    }
+
+    .typing-container {
+        height: auto;
+        font-size: 1.3rem;
+    }
+
+    .skill-rotate {
+        min-width: auto;
+        text-align: center;
+    }
+
+    /* Intro section */
+    .intro-text {
+        padding: 1.2rem;
+        margin-top: 1.5rem;
+        text-align: left;
+    }
+
+    /* Social icons */
+    .social-links {
+        gap: 1rem;
+    }
+
+    .social-links a {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+
+    /* ABOUT / PROJECT / CONTACT spacing */
+    .about-content,
+    .project,
+    .contact-form,
+    .resume-preview,
+    .skill-card,
+    .tool-item {
+        margin-top: 0.8rem;
+    }

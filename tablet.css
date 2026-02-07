@@ -1,0 +1,40 @@
+/* ================= TABLET ONLY FIX ================= */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    /* Header tablet me fixed hi rahe */
+    header {
+        position: fixed;
+        padding: 0.6rem 5%;
+    }
+
+    /* Fixed header ke liye top spacing */
+    .page {
+        padding-top: 110px;
+    }
+
+    #home {
+        padding-top: 110px;
+    }
+
+    /* Hero text thoda balanced */
+    .hero-content h2 {
+        font-size: 2.8rem;
+    }
+
+    .typing-container {
+        font-size: 1.5rem;
+    }
+
+    /* Grid layouts tablet friendly */
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tools-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
